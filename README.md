@@ -1,73 +1,69 @@
-# Welcome to your Lovable project
+# Fuel Fitness Friend 🍛💪
 
-## Project info
+A **calorie tracking web app** focused on **Indian cuisine**, designed to help users log meals, track daily calorie goals, and personalize their nutrition journey.
 
-**URL**: https://lovable.dev/projects/c8bf0ff9-937c-4ac3-8a30-610b532bfe96
+---
 
-## How can I edit this code?
+## 🌟 Features
 
-There are several ways of editing your application.
+### ✅ Indian Food Nutrition Database
+- Integrated **499+ Indian foods and beverages** from `Indian_Food_Nutrition_Processed.csv`
+- Standardized **100g serving size**
+- Rounded calorie counts for readability
+- Supports **search by English or Hindi names**
+- Categories include beverages, breakfast, breads, South Indian dishes, rice, dals, vegetables, non-veg curries, snacks, sweets, salads, soups, chutneys, and more
 
-**Use Lovable**
+### ✅ Custom Foods
+- Add foods not available in the database  
+- Manage via a dedicated **Custom Foods page** (add, edit, delete, view stats)  
+- Foods tagged with **Custom** badge in search results  
+- **Export/Import** foods as JSON for backup or sharing  
+- Persisted in **localStorage**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c8bf0ff9-937c-4ac3-8a30-610b532bfe96) and start prompting.
+### ✅ Daily Calorie Goal Settings
+- Set personalized daily calorie targets  
+- Choose from **recommended profiles** (weight loss, maintenance, gain, athletic)  
+- Real-time validation (safe ranges: **800–10,000 kcal**)  
+- Export/Import settings for backup  
+- Full settings page + quick-edit on main page  
 
-Changes made via Lovable will be committed automatically to this repo.
+### ✅ Unit Conversion & Custom Amounts
+- Dual modes: **Simple (multiplier)** & **Advanced (unit conversion)**  
+- Supports grams, kilograms, ounces, pounds, ml, liters, cups, tbsp, tsp, fl oz, slices, servings, etc.  
+- Real-time calorie calculation based on measurement  
+- Works seamlessly with both database and custom foods  
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🗂️ File Structure
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+src/utils/foodDatabase.ts # Main food database
+scripts/csv-to-food-database.js # Conversion script
 
-Follow these steps:
+src/utils/customFoodManager.ts # Core custom food logic
+src/components/CustomFoodForm.tsx
+src/components/CustomFoodManager.tsx
+src/pages/CustomFoods.tsx
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+src/utils/settingsManager.ts # Daily goal settings logic
+src/components/CalorieGoalSettings.tsx
+src/pages/Settings.tsx
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+src/utils/unitConverter.ts # Unit conversion system
+src/components/ServingSizeCalculator.tsx
 
-# Step 3: Install the necessary dependencies.
-npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/Swakyxd/fuel-fitness-friend.git
+cd fuel-fitness-friend
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c8bf0ff9-937c-4ac3-8a30-610b532bfe96) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
