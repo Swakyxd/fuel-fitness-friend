@@ -1,8 +1,4 @@
-Perfect — thanks for pasting all that detail! 🚀
 
-I can now transform it into a **clean, professional README.md** for your repo `fuel-fitness-friend`. Here’s a polished version structured for GitHub:
-
-```markdown
 # Fuel Fitness Friend 🍛💪
 
 A **calorie tracking web app** focused on **Indian cuisine**, designed to help users log meals, track daily calorie goals, and personalize their nutrition journey.
@@ -145,11 +141,6 @@ Contributions are welcome! To get started:
 4. Push branch (`git push origin feature/my-feature`)
 5. Open a Pull Request
 
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
 ---
 
@@ -157,8 +148,5 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 
 Developed with ❤️ by [Swakyxd](https://github.com/Swakyxd)
 
-```
-
 ---
 
-```
